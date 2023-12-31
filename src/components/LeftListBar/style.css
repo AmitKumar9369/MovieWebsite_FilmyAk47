@@ -1,0 +1,34 @@
+.asideBar .list-group-item {
+  background-color: black;
+  color: orangered;
+  border-top: 1px solid #ff0000;
+  padding-left: 25px;
+  cursor: pointer;
+  position: relative;
+}
+.asideBar .list-group-item.selected {
+  background-image: linear-gradient(90deg, #ffff00 0%, #000080 100%);
+  box-shadow: 0 0 20px 0 rgb(255 88 96 / 50%);
+  opacity: 0.85;
+  color: black;
+}
+.asideBar .list-group-item.selected i {
+  position: absolute;
+  right: 14px;
+  top: 6px;
+}
+.asideBar .list-group-item:hover {
+  text-decoration: underline;
+}
+.asideBar .list-group-item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ff1493;
+  left: 10px;
+  top: 50%;
+  margin-top: -2px;
+}
